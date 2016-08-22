@@ -1,0 +1,280 @@
+// ---oOo--- content list ---oOo---
+// [max-width: 480px]: line 9
+// [max-width: 768px]: line 56
+// [min-width: 768px and max-width: 992px]: line 190
+// [min-width: 768px and max-width: 1300px]: line 199
+// ---oOo--- end content list ---oOo---
+
+/* mobile */
+@media screen and (max-width: 480px) {
+  /* home */
+  #home {
+    .home-content {
+      .nexx-logo {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        padding: 0 20px;
+      }
+    }
+  }
+  /* home */
+
+  /* contact-us */
+  #contact-us {
+    .contact-us-content {
+      .container-fluid {
+        #map {
+        	height: 400px;
+        }
+
+        .contact-info {
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  /* end contact-us */
+
+  /* news */
+  #news {
+    h2 {
+      font-size: 36px;
+    }
+    .article {
+      font-size: 13px;
+      .art-img {
+        width: 80px;
+      }
+
+      .art-content {
+        padding-left: 10px;
+
+        h4 {
+          padding: 0 0 10px 0;
+          font-size: 18px;
+        }
+
+        p {
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+  /* end news */
+}
+
+@media screen and (max-width: 768px) {
+  /* navbar */
+  .navbar-default {
+    z-index: 999;
+    border: none;
+    width: 100%;
+  }
+
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:focus,
+  .navbar-default .navbar-nav>.active>a:hover {
+    border-bottom: none;
+    text-align: center;
+    line-height: 70px;
+    padding: 0;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    border-bottom: none;
+    border-color: transparent;
+    text-align: center;
+    line-height: 70px;
+    padding: 0;
+  }
+
+  .navbar-default .navbar-nav>li>a:focus,
+  .navbar-default .navbar-nav>li>a:hover {
+    border: none;
+  }
+
+  .container-fluid>.navbar-collapse,
+  .container-fluid>.navbar-header {
+    border: none;
+  }
+  /* end navbar */
+
+  /* home */
+  #home {
+    .home-content {
+      .brand-logo {
+        margin-top: 70px;
+      }
+
+      .apps-logo {
+        div:nth-child(3),
+        div:last-child {
+          margin-top: 20px;
+        }
+
+        p {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  /* end home*/
+
+  /* about us */
+  #about-us {
+    background: $dark-blue url(../images/about-us-mobile-bg.jpg) top center no-repeat;
+    @include bg-cover;
+
+    .about-us-content {
+      margin-bottom: 200px;
+
+      h1 {
+        font-size: 48px;
+      }
+    }
+  }
+  /* end about us */
+
+  /* contact-us */
+  #contact-us {
+    .navbar-default {
+      background: $dark-blue url(../images/nav-bg.jpg) top center no-repeat fixed;
+      border-color: transparent;
+      height: 70px;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+      background-color: $dark-blue;
+    }
+
+    .navbar>.container-fluid .navbar-brand {
+      display: none;
+    }
+
+    .contact-us-content {
+      .container-fluid {
+        #map {
+        	height: 400px;
+        }
+      }
+    }
+  }
+  /* end contact-us */
+
+  /* news */
+  #news {
+    .navbar-default {
+      background: $dark-blue url(../images/nav-bg.jpg) top center no-repeat fixed;
+      border-color: transparent;
+      height: 70px;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+      background-color: $dark-blue;
+    }
+
+    .navbar>.container-fluid .navbar-brand {
+      display: none;
+    }
+  }
+  /* end news */
+
+  /* article */
+  #article {
+    .navbar-default {
+      background: $dark-blue url(../images/nav-bg.jpg) top center no-repeat fixed;
+      border-color: transparent;
+      height: 70px;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+      background-color: $dark-blue;
+    }
+
+    .navbar>.container-fluid .navbar-brand {
+      display: none;
+    }
+  }
+  /* end article */
+
+  /* footer */
+  .footer {
+    position: relative;
+    height: auto;
+    .footer-content {
+      & > div {
+        width: 100%;
+        padding: 20px 0 0 20px;
+        line-height: 18px;
+      }
+      &:last-child {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  /* end footer */
+}
+
+@media screen and (min-width: 767px) and (max-width: 770px) {
+  .navbar-default .navbar-nav > li > a {
+    color: white;
+    border-bottom: solid 2px white;
+    font-size: 20px;
+    padding-right: 50px;
+    padding-left: 30px;
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:focus,
+  .navbar-default .navbar-nav>.active>a:hover {
+    border-bottom: solid 2px $orange;
+    text-align: center;
+    line-height: 70px;
+    padding-right: 50px;
+    padding-left: 30px;
+  }
+
+  .navbar-default .navbar-nav>li>a:focus,
+  .navbar-default .navbar-nav>li>a:hover {
+    border-bottom: solid 2px $orange;
+  }
+
+  #home .home-content .apps-logo div:nth-child(3),
+  #home .home-content .apps-logo div:last-child {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* about us */
+  #about-us {
+    background: $dark-blue url(../images/about-us-tablet-bg.jpg) top center no-repeat;
+    @include bg-cover;
+  }
+  /* end about us */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  /* footer */
+  .footer {
+    position: relative;
+    height: auto;
+    .footer-content {
+      & > div {
+        width: 48%;
+        padding: 20px 0 0 20px;
+        line-height: 18px;
+      }
+      &:last-child {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  /* end footer */
+}
+/* end mobile */
