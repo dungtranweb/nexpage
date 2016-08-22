@@ -1,3 +1,5 @@
+// compileNested, nestedFilenamePattern: ../css/style.css
+// sourceMap: true
 // import scss partials
 @import "reset";
 @import "variables";
@@ -72,8 +74,12 @@ body {
 /* end navbar */
 
 /* home */
+
+.blur {
+  background: rgba(#0f1e39, 0.85);
+}
+
 #home {
-  background: $dark-blue url(../images/home-bg.jpg) center center no-repeat fixed;
   @include bg-cover;
 
   .home-content {
@@ -99,7 +105,7 @@ body {
 
     p {
       padding-top: 20px;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 16px;
       color: white;
     }
