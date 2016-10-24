@@ -45,6 +45,7 @@ var options = {
   zoom: 17,
   disableDefaultUI: false,
   scrollwheel: false,
+  draggable: false,
   mapTypeId: 'NextStep'
 
 };
