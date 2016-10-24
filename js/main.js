@@ -35,29 +35,29 @@ window.onload = function () {
   }
 ];
 
-var myLatlng = new google.maps.LatLng(10.794519, 106.702320);
+var myLatlng = new google.maps.LatLng(10.808156, 106.716700);
 
 var options = {
   mapTypeControlOptions: {
-    mapTypeIds: ['Styled']
+    mapTypeIds: ['NextStep']
   },
   center: myLatlng,
   zoom: 17,
   disableDefaultUI: false,
   scrollwheel: false,
-  mapTypeId: 'Styled'
+  mapTypeId: 'NextStep'
 
 };
 
 var div = document.getElementById('location');
 var map = new google.maps.Map(div, options);
-var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
-map.mapTypes.set('Styled', styledMapType);
+var styledMapType = new google.maps.StyledMapType(styles, { name: 'NextStep' });
+map.mapTypes.set('NextStep', styledMapType);
 
   var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      title: 'NEX'
+      title: 'NextStep'
   });
 
 };
